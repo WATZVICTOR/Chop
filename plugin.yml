@@ -1,0 +1,6 @@
+main: com.watzvictor1.chop.Chop_Main
+name: Chop
+version: '1.0'
+description: Destroy one block to chop down an entire tree
+author: WATZ_VICTOR
+api-version: 1.16
