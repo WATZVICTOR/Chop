@@ -115,35 +115,35 @@ public class MyListener implements Listener {
 		if (!isLog(block)) return tree; // Empaty list
 		tree.add(block);
 		
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,1,0))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,0,0))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,-1,0))); // Matriz en el eje 0
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,1,0))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,0,0))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,-1,0))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,1,0))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,0,0))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,-1,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,1,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,0,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,-1,0))); // Matriz en el eje 0
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,1,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,0,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,-1,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,1,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,0,0))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,-1,0))); // 
 
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,1,-1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,0,-1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,-1,-1))); // Matriz en el eje -1 
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,1,-1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,0,-1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,-1,-1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,1,-1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,0,-1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,-1,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,1,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,0,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,-1,-1))); // Matriz en el eje -1 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,1,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,0,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,-1,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,1,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,0,-1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,-1,-1))); // 
 		
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,1,1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,0,1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(-1,-1,1))); // Matriz en el eje 1
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,1,1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,0,1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(0,-1,1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,1,1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,0,1))); // 
-		tree.addAll(chopTree_Async(tree_location.clone().add(1,-1,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,1,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,0,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(-1,-1,1))); // Matriz en el eje 1
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,1,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,0,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(0,-1,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,1,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,0,1))); // 
+		tree.addAll(chopTree_multithread_getTree(tree_location.clone().add(1,-1,1))); // 
 
 		return tree;
 	}
